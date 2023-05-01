@@ -25,20 +25,28 @@
             </objects>
             <point key="canvasLocation" x="-501" y="-40"/>
         </scene>
-        <!--View Controller-->
+        <!--첫번째-->
         <scene sceneID="ysn-E8-fMV">
             <objects>
-                <viewController id="zKR-ro-Dma" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zKR-ro-Dma" customClass="ViewController" customModule="MoveScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cy3-9h-wPe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aA-Ta-oNt">
-                                <rect key="frame" x="159" y="245.00000000000003" width="75" height="34.333333333333343"/>
+                                <rect key="frame" x="123.66666666666669" y="245" width="146" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="스토리보드로 푸시"/>
                                 <connections>
                                     <segue destination="Teg-j1-59l" kind="show" id="osp-n0-OvA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXv-Nw-3iz">
+                                <rect key="frame" x="138" y="609.33333333333337" width="117" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="프로그램 푸시"/>
+                                <connections>
+                                    <action selector="onPushBtnClicked:" destination="zKR-ro-Dma" eventType="touchUpInside" id="CUe-sA-wTT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,10 +54,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3aA-Ta-oNt" firstAttribute="centerX" secondItem="Os0-WY-et4" secondAttribute="centerX" id="5SE-R5-mx1"/>
+                            <constraint firstItem="yXv-Nw-3iz" firstAttribute="centerX" secondItem="Os0-WY-et4" secondAttribute="centerX" id="GDG-Ds-SuV"/>
+                            <constraint firstItem="Os0-WY-et4" firstAttribute="bottom" secondItem="yXv-Nw-3iz" secondAttribute="bottom" constant="173.66666666666663" id="rG7-gz-hch"/>
                             <constraint firstItem="3aA-Ta-oNt" firstAttribute="top" secondItem="Os0-WY-et4" secondAttribute="top" constant="142" id="z45-zr-Jmi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="W5i-0m-th8"/>
+                    <navigationItem key="navigationItem" title="첫번째" id="W5i-0m-th8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peD-hV-oZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
