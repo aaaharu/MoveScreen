@@ -6,12 +6,28 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D30488D029FFB44B008311DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30488CF29FFB44B008311DC /* AppDelegate.swift */; };
+		D30488D229FFB44B008311DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30488D129FFB44B008311DC /* SceneDelegate.swift */; };
+		D30488D429FFB44B008311DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30488D329FFB44B008311DC /* ViewController.swift */; };
+		D30488D729FFB44B008311DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30488D529FFB44B008311DC /* Main.storyboard */; };
+		D30488D929FFB44C008311DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30488D829FFB44C008311DC /* Assets.xcassets */; };
+		D30488DC29FFB44C008311DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30488DA29FFB44C008311DC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		D3B55F4129FF830500EB8DA4 /* MoveScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30488CC29FFB44B008311DC /* MoveScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30488CF29FFB44B008311DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D30488D129FFB44B008311DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D30488D329FFB44B008311DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D30488D629FFB44B008311DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D30488D829FFB44C008311DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D30488DB29FFB44C008311DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D30488DD29FFB44C008311DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D3B55F3E29FF830500EB8DA4 /* Frameworks */ = {
+		D30488C929FFB44B008311DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -21,25 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D3B55F3829FF830500EB8DA4 = {
+		D30488C329FFB44B008311DC = {
 			isa = PBXGroup;
 			children = (
-				D3B55F4329FF830500EB8DA4 /* MoveScreen */,
-				D3B55F4229FF830500EB8DA4 /* Products */,
+				D30488CE29FFB44B008311DC /* MoveScreen */,
+				D30488CD29FFB44B008311DC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D3B55F4229FF830500EB8DA4 /* Products */ = {
+		D30488CD29FFB44B008311DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3B55F4129FF830500EB8DA4 /* MoveScreen.app */,
+				D30488CC29FFB44B008311DC /* MoveScreen.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D3B55F4329FF830500EB8DA4 /* MoveScreen */ = {
+		D30488CE29FFB44B008311DC /* MoveScreen */ = {
 			isa = PBXGroup;
 			children = (
+				D30488CF29FFB44B008311DC /* AppDelegate.swift */,
+				D30488D129FFB44B008311DC /* SceneDelegate.swift */,
+				D30488D329FFB44B008311DC /* ViewController.swift */,
+				D30488D529FFB44B008311DC /* Main.storyboard */,
+				D30488D829FFB44C008311DC /* Assets.xcassets */,
+				D30488DA29FFB44C008311DC /* LaunchScreen.storyboard */,
+				D30488DD29FFB44C008311DC /* Info.plist */,
 			);
 			path = MoveScreen;
 			sourceTree = "<group>";
@@ -47,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D3B55F4029FF830500EB8DA4 /* MoveScreen */ = {
+		D30488CB29FFB44B008311DC /* MoveScreen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3B55F5529FF830600EB8DA4 /* Build configuration list for PBXNativeTarget "MoveScreen" */;
+			buildConfigurationList = D30488E029FFB44C008311DC /* Build configuration list for PBXNativeTarget "MoveScreen" */;
 			buildPhases = (
-				D3B55F3D29FF830500EB8DA4 /* Sources */,
-				D3B55F3E29FF830500EB8DA4 /* Frameworks */,
-				D3B55F3F29FF830500EB8DA4 /* Resources */,
+				D30488C829FFB44B008311DC /* Sources */,
+				D30488C929FFB44B008311DC /* Frameworks */,
+				D30488CA29FFB44B008311DC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -61,25 +84,25 @@
 			);
 			name = MoveScreen;
 			productName = MoveScreen;
-			productReference = D3B55F4129FF830500EB8DA4 /* MoveScreen.app */;
+			productReference = D30488CC29FFB44B008311DC /* MoveScreen.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D3B55F3929FF830500EB8DA4 /* Project object */ = {
+		D30488C429FFB44B008311DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					D3B55F4029FF830500EB8DA4 = {
+					D30488CB29FFB44B008311DC = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = D3B55F3C29FF830500EB8DA4 /* Build configuration list for PBXProject "MoveScreen" */;
+			buildConfigurationList = D30488C729FFB44B008311DC /* Build configuration list for PBXProject "MoveScreen" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -87,38 +110,63 @@
 				en,
 				Base,
 			);
-			mainGroup = D3B55F3829FF830500EB8DA4;
-			productRefGroup = D3B55F4229FF830500EB8DA4 /* Products */;
+			mainGroup = D30488C329FFB44B008311DC;
+			productRefGroup = D30488CD29FFB44B008311DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3B55F4029FF830500EB8DA4 /* MoveScreen */,
+				D30488CB29FFB44B008311DC /* MoveScreen */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D3B55F3F29FF830500EB8DA4 /* Resources */ = {
+		D30488CA29FFB44B008311DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30488DC29FFB44C008311DC /* LaunchScreen.storyboard in Resources */,
+				D30488D929FFB44C008311DC /* Assets.xcassets in Resources */,
+				D30488D729FFB44B008311DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D3B55F3D29FF830500EB8DA4 /* Sources */ = {
+		D30488C829FFB44B008311DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30488D429FFB44B008311DC /* ViewController.swift in Sources */,
+				D30488D029FFB44B008311DC /* AppDelegate.swift in Sources */,
+				D30488D229FFB44B008311DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		D30488D529FFB44B008311DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30488D629FFB44B008311DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D30488DA29FFB44C008311DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30488DB29FFB44C008311DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		D3B55F5329FF830600EB8DA4 /* Debug */ = {
+		D30488DE29FFB44C008311DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -178,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		D3B55F5429FF830600EB8DA4 /* Release */ = {
+		D30488DF29FFB44C008311DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +280,7 @@
 			};
 			name = Release;
 		};
-		D3B55F5629FF830600EB8DA4 /* Debug */ = {
+		D30488E129FFB44C008311DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -246,7 +294,6 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -263,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		D3B55F5729FF830600EB8DA4 /* Release */ = {
+		D30488E229FFB44C008311DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -277,7 +324,6 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,25 +343,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D3B55F3C29FF830500EB8DA4 /* Build configuration list for PBXProject "MoveScreen" */ = {
+		D30488C729FFB44B008311DC /* Build configuration list for PBXProject "MoveScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3B55F5329FF830600EB8DA4 /* Debug */,
-				D3B55F5429FF830600EB8DA4 /* Release */,
+				D30488DE29FFB44C008311DC /* Debug */,
+				D30488DF29FFB44C008311DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3B55F5529FF830600EB8DA4 /* Build configuration list for PBXNativeTarget "MoveScreen" */ = {
+		D30488E029FFB44C008311DC /* Build configuration list for PBXNativeTarget "MoveScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3B55F5629FF830600EB8DA4 /* Debug */,
-				D3B55F5729FF830600EB8DA4 /* Release */,
+				D30488E129FFB44C008311DC /* Debug */,
+				D30488E229FFB44C008311DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D3B55F3929FF830500EB8DA4 /* Project object */;
+	rootObject = D30488C429FFB44B008311DC /* Project object */;
 }
