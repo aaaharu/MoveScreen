@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwA-oz-x2b">
-                                <rect key="frame" x="127" y="127" width="42" height="21"/>
+                                <rect key="frame" x="127" y="127" width="200" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -57,6 +57,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="wln-N7-URa"/>
                     <connections>
+                        <outlet property="bigLabel" destination="RwA-oz-x2b" id="I8e-pc-mwB"/>
                         <segue destination="Nio-TK-uUB" kind="unwind" unwindAction="goBackToFirstVCWithUnwindSegue:" id="2YW-kl-mFr"/>
                     </connections>
                 </viewController>

@@ -15,6 +15,8 @@
 		D3B55F5129FF830600EB8DA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B55F4F29FF830600EB8DA4 /* LaunchScreen.storyboard */; };
 		D3B55F5929FF91A500EB8DA4 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B55F5829FF91A500EB8DA4 /* DetailVC.swift */; };
 		D3B55F5B29FF96B900EB8DA4 /* DetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B55F5A29FF96B900EB8DA4 /* DetailVC.storyboard */; };
+		D3B55F5D29FFA70A00EB8DA4 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B55F5C29FFA70A00EB8DA4 /* SecondVC.swift */; };
+		D3B55F5F29FFA71500EB8DA4 /* SecondVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B55F5E29FFA71500EB8DA4 /* SecondVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		D3B55F5229FF830600EB8DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3B55F5829FF91A500EB8DA4 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		D3B55F5A29FF96B900EB8DA4 /* DetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailVC.storyboard; sourceTree = "<group>"; };
+		D3B55F5C29FFA70A00EB8DA4 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		D3B55F5E29FFA71500EB8DA4 /* SecondVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondVC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				D3B55F4429FF830500EB8DA4 /* AppDelegate.swift */,
 				D3B55F4629FF830500EB8DA4 /* SceneDelegate.swift */,
 				D3B55F4829FF830500EB8DA4 /* FirstVC.swift */,
+				D3B55F5C29FFA70A00EB8DA4 /* SecondVC.swift */,
+				D3B55F5E29FFA71500EB8DA4 /* SecondVC.storyboard */,
 				D3B55F5829FF91A500EB8DA4 /* DetailVC.swift */,
 				D3B55F5A29FF96B900EB8DA4 /* DetailVC.storyboard */,
 				D3B55F4A29FF830500EB8DA4 /* Main.storyboard */,
@@ -132,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3B55F5129FF830600EB8DA4 /* LaunchScreen.storyboard in Resources */,
+				D3B55F5F29FFA71500EB8DA4 /* SecondVC.storyboard in Resources */,
 				D3B55F4E29FF830600EB8DA4 /* Assets.xcassets in Resources */,
 				D3B55F5B29FF96B900EB8DA4 /* DetailVC.storyboard in Resources */,
 				D3B55F4C29FF830500EB8DA4 /* Main.storyboard in Resources */,
@@ -146,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3B55F4929FF830500EB8DA4 /* FirstVC.swift in Sources */,
+				D3B55F5D29FFA70A00EB8DA4 /* SecondVC.swift in Sources */,
 				D3B55F5929FF91A500EB8DA4 /* DetailVC.swift in Sources */,
 				D3B55F4529FF830500EB8DA4 /* AppDelegate.swift in Sources */,
 				D3B55F4729FF830500EB8DA4 /* SceneDelegate.swift in Sources */,

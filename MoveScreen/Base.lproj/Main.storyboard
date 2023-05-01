@@ -34,20 +34,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DKV-Dn-Qgg">
-                                <rect key="frame" x="138.33333333333334" y="245" width="116.66666666666666" height="143"/>
+                                <rect key="frame" x="138.33333333333334" y="245" width="116.66666666666666" height="197.33333333333337"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibx-oO-GK5">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wxn-eh-bWP">
                                         <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibx-oO-GK5">
+                                        <rect key="frame" x="0.0" y="54.333333333333314" width="116.66666666666667" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="두번째로 이동"/>
+                                        <connections>
+                                            <segue destination="f1z-8Z-04O" kind="show" identifier="navToSecondVC" id="P51-RH-zQq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aA-Ta-oNt">
-                                        <rect key="frame" x="0.0" y="54.333333333333314" width="116.66666666666667" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="108.66666666666669" width="116.66666666666667" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="디테일로 이동"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXv-Nw-3iz">
-                                        <rect key="frame" x="0.0" y="108.66666666666669" width="116.66666666666667" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="163" width="116.66666666666667" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="프로그램 푸시"/>
                                         <connections>
@@ -67,13 +75,24 @@
                     <navigationItem key="navigationItem" title="첫번째" id="W5i-0m-th8"/>
                     <connections>
                         <outlet property="navToDetailBtn" destination="3aA-Ta-oNt" id="Iow-T1-LMr"/>
-                        <outlet property="navToSecondVCBtn" destination="Ibx-oO-GK5" id="4Mn-RD-mGn"/>
+                        <outlet property="navToSecondVCBtn" destination="Ibx-oO-GK5" id="4W5-7A-gJe"/>
+                        <outlet property="userInputTextField" destination="Wxn-eh-bWP" id="Fu1-XO-w3N"/>
                         <segue destination="Wrm-i3-tkD" kind="show" identifier="navToDetailVC" id="Kve-TE-CJ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peD-hV-oZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="361" y="-35"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="GKT-Lf-UOY">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SecondVC" storyboardName="SecondVC" referencedIdentifier="SecondVC" id="f1z-8Z-04O" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MHZ-JU-7RN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dya-Lm-e4s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="-115"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="kmK-U1-4hB">
@@ -84,22 +103,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSQ-ZM-bVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1404" y="225"/>
-        </scene>
-        <!--두번째-->
-        <scene sceneID="xUt-SW-zE3">
-            <objects>
-                <viewController id="Teg-j1-59l" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WX2-ca-7gI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="GcT-Kj-Yyy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="두번째" id="6dh-8e-Xo2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xrb-O5-fxZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2219" y="-153"/>
         </scene>
     </scenes>
     <resources>

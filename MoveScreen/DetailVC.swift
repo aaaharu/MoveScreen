@@ -9,8 +9,16 @@ import UIKit
 
 class DetailVC: UIViewController {
     
+    @IBOutlet weak var bigLabel: UILabel!
+    var someValue:String = "" {
+        didSet {
+            print("someValue: \(someValue)")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        bigLabel.text = someValue
         
     }
     @IBAction func goBackToFirstVC(_ sender: UIButton) {
