@@ -7,12 +7,31 @@
 
 import UIKit
 
+
 class ThirdVC: UIViewController {
 
+    
+    var someValue : String = ""
+
+    @IBOutlet weak var mainLabel: UILabel!
+    
+    
+    init?(coder: NSCoder, someValue: String){
+            self.someValue = someValue
+            super.init(coder: coder)
+     
+        }
+        
+        required init?(coder: NSCoder) {
+            super.init(coder: coder)
+         
+        }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        mainLabel.text = someValue
+        
     }
     
 

@@ -8,29 +8,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--FirstVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoveScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstVC" customModule="MoveScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="Avk-I2-5sd">
-                                <rect key="frame" x="138" y="185" width="116.66666666666667" height="185"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Avk-I2-5sd">
+                                <rect key="frame" x="20" y="151" width="353" height="197.33333333333337"/>
                                 <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mai-Pj-Gwj">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-Vl-pFT">
-                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="54.333333333333343" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="두번째로 가기"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXe-GV-bAx">
-                                        <rect key="frame" x="0.0" y="75.333333333333329" width="116.66666666666667" height="34.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="108.66666666666669" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="세번째로 가기"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IL-z4-08b">
-                                        <rect key="frame" x="0.0" y="150.66666666666666" width="116.66666666666667" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="163" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="디테일로 가기"/>
                                     </button>
@@ -39,11 +44,43 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Avk-I2-5sd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fqk-Sp-BQn"/>
+                            <constraint firstItem="Avk-I2-5sd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QvV-p4-YhY"/>
+                            <constraint firstItem="Avk-I2-5sd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="92" id="e78-DU-B9t"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="navToSecondBtn" destination="CN6-Vl-pFT" id="oRG-oD-5dn"/>
+                        <outlet property="navToThirdBtn" destination="QXe-GV-bAx" id="4uY-9x-Y3E"/>
+                        <outlet property="userInputTextField" destination="mai-Pj-Gwj" id="fpl-gb-iwO"/>
+                        <segue destination="yXE-02-5Ji" kind="show" identifier="NavToSecondVC" id="1Bv-bf-vPy"/>
+                        <segue destination="Rar-PQ-gup" kind="show" identifier="NavToThirdVC" destinationCreationSelector="navToSecondVCWithSomeDataWithCoder:sender:segueIdentifier:" id="Xad-nl-DB8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="64.885496183206101" y="-27.464788732394368"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="b83-AU-diQ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SecondVC" storyboardName="SecondVC" referencedIdentifier="SecondVC" id="yXE-02-5Ji" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3Yq-JR-kjf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyq-je-dPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="-187"/>
+        </scene>
+        <!--ThirdVC-->
+        <scene sceneID="0iT-C1-Mm4">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ThirdVC" storyboardName="ThirdVC" referencedIdentifier="ThirdVC" id="Rar-PQ-gup" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="t7W-Tq-f56"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sS8-WS-JHL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="-118"/>
         </scene>
     </scenes>
     <resources>

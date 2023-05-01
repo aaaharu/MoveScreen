@@ -8,10 +8,16 @@
 import UIKit
 
 class SecondVC: UIViewController {
-
+    var someValue: String = "" {
+        didSet {
+            print("someValue: \(someValue)")
+        }
+    }
+    @IBOutlet weak var mainLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        mainLabel.text = someValue
         // Do any additional setup after loading the view.
     }
     
