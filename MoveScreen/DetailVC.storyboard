@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5wg-u3-Cnf">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailVC-->
+        <scene sceneID="KC7-IA-Vc6">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5wg-u3-Cnf" customClass="DetailVC" customModule="MoveScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="15o-Av-szj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwA-oz-x2b">
+                                <rect key="frame" x="127" y="127" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="CRj-3B-Mk7">
+                                <rect key="frame" x="66.333333333333343" y="194" width="260.33333333333326" height="111.66666666666669"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZU-zq-5BH">
+                                        <rect key="frame" x="0.0" y="0.0" width="260.33333333333331" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="첫번째로 돌아가기"/>
+                                        <connections>
+                                            <action selector="goBackToFirstVC:" destination="5wg-u3-Cnf" eventType="touchUpInside" id="6FP-xe-xOl"/>
+                                            <segue destination="Nio-TK-uUB" kind="unwind" identifier="goBackToFirstVC" unwindAction="goBackToFirstVCWithUnwindSegue:" id="97I-uP-h0V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vk-cV-wuc">
+                                        <rect key="frame" x="0.0" y="77.333333333333314" width="260.33333333333331" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="첫번째로 돌아가기 performSegue"/>
+                                        <connections>
+                                            <action selector="performSegueFirstVC:" destination="5wg-u3-Cnf" eventType="touchUpInside" id="bQC-9V-g6O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vbm-0t-iCg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CRj-3B-Mk7" firstAttribute="centerX" secondItem="vbm-0t-iCg" secondAttribute="centerX" id="Z2f-25-ljx"/>
+                            <constraint firstItem="CRj-3B-Mk7" firstAttribute="leading" secondItem="vbm-0t-iCg" secondAttribute="leading" constant="66.333333333333343" id="fLe-pz-m7C"/>
+                            <constraint firstItem="CRj-3B-Mk7" firstAttribute="top" secondItem="vbm-0t-iCg" secondAttribute="top" constant="135" id="sdN-Vh-j4J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wln-N7-URa"/>
+                    <connections>
+                        <segue destination="Nio-TK-uUB" kind="unwind" unwindAction="goBackToFirstVCWithUnwindSegue:" id="2YW-kl-mFr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XoV-lc-KXC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Nio-TK-uUB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1342.7480916030534" y="339.43661971830988"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

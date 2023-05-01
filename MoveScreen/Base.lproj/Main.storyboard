@@ -28,44 +28,64 @@
         <!--첫번째-->
         <scene sceneID="ysn-E8-fMV">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zKR-ro-Dma" customClass="ViewController" customModule="MoveScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zKR-ro-Dma" customClass="FirstVC" customModule="MoveScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cy3-9h-wPe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aA-Ta-oNt">
-                                <rect key="frame" x="123.66666666666669" y="245" width="146" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="스토리보드로 푸시"/>
-                                <connections>
-                                    <segue destination="Teg-j1-59l" kind="show" id="osp-n0-OvA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXv-Nw-3iz">
-                                <rect key="frame" x="138" y="609.33333333333337" width="117" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="프로그램 푸시"/>
-                                <connections>
-                                    <action selector="onPushBtnClicked:" destination="zKR-ro-Dma" eventType="touchUpInside" id="CUe-sA-wTT"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DKV-Dn-Qgg">
+                                <rect key="frame" x="138.33333333333334" y="245" width="116.66666666666666" height="143"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibx-oO-GK5">
+                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="두번째로 이동"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aA-Ta-oNt">
+                                        <rect key="frame" x="0.0" y="54.333333333333314" width="116.66666666666667" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="디테일로 이동"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXv-Nw-3iz">
+                                        <rect key="frame" x="0.0" y="108.66666666666669" width="116.66666666666667" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="프로그램 푸시"/>
+                                        <connections>
+                                            <action selector="onPushBtnClicked:" destination="zKR-ro-Dma" eventType="touchUpInside" id="CUe-sA-wTT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Os0-WY-et4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3aA-Ta-oNt" firstAttribute="centerX" secondItem="Os0-WY-et4" secondAttribute="centerX" id="5SE-R5-mx1"/>
-                            <constraint firstItem="yXv-Nw-3iz" firstAttribute="centerX" secondItem="Os0-WY-et4" secondAttribute="centerX" id="GDG-Ds-SuV"/>
-                            <constraint firstItem="Os0-WY-et4" firstAttribute="bottom" secondItem="yXv-Nw-3iz" secondAttribute="bottom" constant="173.66666666666663" id="rG7-gz-hch"/>
-                            <constraint firstItem="3aA-Ta-oNt" firstAttribute="top" secondItem="Os0-WY-et4" secondAttribute="top" constant="142" id="z45-zr-Jmi"/>
+                            <constraint firstItem="DKV-Dn-Qgg" firstAttribute="centerX" secondItem="Os0-WY-et4" secondAttribute="centerX" id="0Pn-yS-xah"/>
+                            <constraint firstItem="DKV-Dn-Qgg" firstAttribute="top" secondItem="Os0-WY-et4" secondAttribute="top" constant="142" id="6Pq-t5-DJ2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="첫번째" id="W5i-0m-th8"/>
+                    <connections>
+                        <outlet property="navToDetailBtn" destination="3aA-Ta-oNt" id="Iow-T1-LMr"/>
+                        <outlet property="navToSecondVCBtn" destination="Ibx-oO-GK5" id="4Mn-RD-mGn"/>
+                        <segue destination="Wrm-i3-tkD" kind="show" identifier="navToDetailVC" id="Kve-TE-CJ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peD-hV-oZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="361" y="-35"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailVC-->
+        <scene sceneID="kmK-U1-4hB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailVC" referencedIdentifier="DetailVC" id="Wrm-i3-tkD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8fC-N7-rnT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSQ-ZM-bVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404" y="225"/>
+        </scene>
+        <!--두번째-->
         <scene sceneID="xUt-SW-zE3">
             <objects>
                 <viewController id="Teg-j1-59l" sceneMemberID="viewController">
@@ -75,11 +95,11 @@
                         <viewLayoutGuide key="safeArea" id="GcT-Kj-Yyy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6dh-8e-Xo2"/>
+                    <navigationItem key="navigationItem" title="두번째" id="6dh-8e-Xo2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrb-O5-fxZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184" y="-35"/>
+            <point key="canvasLocation" x="2219" y="-153"/>
         </scene>
     </scenes>
     <resources>
